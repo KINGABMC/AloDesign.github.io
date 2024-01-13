@@ -1,10 +1,4 @@
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: poppins;
-    box-sizing: border-box;
- }
  /*Body*/
  body{
     margin: 0px;
@@ -13,57 +7,52 @@
     background-color: #1d1a1a;
 }
 /*Barre de Navigation*/
-nav{
-    display:flex; 
-    flex-direction: wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0%;
-    background-color: #6e538d;
-   padding-left: 60px;
-   padding-right: 70px;
-   margin-left: -40px;
-   margin-right: -40px;
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#58555b;
+	position: sticky;
+	top: 0;
 }
- nav .profile {
-      display: table-column;
-      align-items: center;
-     }
- nav .profile img {
-     width: 30px;
-     height: 30px;
-     border-radius: 50%;
-     margin-left: px;
-     
- }
- nav ul .socialLink {
-    background-color: rgb(99, 82, 82);
-    border-radius: 90px 0px 100px 100px;
- }
- nav .profile h1 {
-     margin-left: 10px;
-      color: rgb(222, 215, 215);
-      font: normal 15px 'Cookie', italic;
-      color: white;
-     margin-left: -13px;
-     margin-top: -5px;
- }
- nav ul
-       {
-         display: flex;
-         list-style-type:none ;
-       }
- nav ul a{
-       margin-left: 20px;  
-       cursor: pointer; 
-       color: rgb(245, 239, 239);
-       font-family:  Playfair Display ;
-
-} 
- nav ul a:hover{
-     
-     color: rgb(207, 199, 199);
+nav .profile {
+	display: flex;
+	align-items: center;
+}
+nav .profile img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+nav .profile h3 {
+        color: #ffffff;
+        font: normal 20px 'Cookie', italic;
+        margin: 5px;
+      }
+nav .profile span {
+        color: #b9b0b0;
+        font: normal 20px 'Cookie', italic;
+        margin: 0;
+      }     
+nav ul {
+	display: flex;
+	list-style-type: none;
+    padding-right: 30px;
+   
+}
+nav ul li {
+	margin-left: 20px;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;}
+    
+    nav ul a {
+        color: #b9b0b0;
+        text-decoration: none;
+   
+}
+nav ul li:hover {
+	border-bottom-color: #000;
 }
 /*Acceuil*/
 .page-content {
@@ -107,7 +96,7 @@ nav{
     border: none;
     outline: none;
     padding: 0%;
-    font-size: 15px;
+    font-size: 24px;
     font-weight: bold;
     border-bottom: 1px solid gray;
     padding-bottom:5px;
@@ -129,7 +118,7 @@ nav{
     margin-top: 80px;
 }
  .competences .competence p{
-    color: rgb(175, 114, 114);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
@@ -139,7 +128,7 @@ nav{
     font-family: Fira Sans;
 }
  .competences .competence h3{
-    color: rgb(210, 166, 166);
+    color: rgb(255, 253, 253);
     font-size: 25px;
     margin-left: 200px;
     font-family: Fira Sans;
@@ -151,7 +140,7 @@ nav{
   font-family:  Playfair Display ;
 }
  .competences .competence u{
-        color: rgb(210, 166, 166);
+        color: rgb(255, 255, 255);
 
  }
    
@@ -214,9 +203,9 @@ list-style: none;
 }
 /*contact*/
 .contacts .content h2 { font-size: 50PX;
+     display: flex;
     justify-content: center;
      align-items: center;
-     margin-left: 500px;
      color: #f6f2f2;
      margin-bottom: 30px;
  }
@@ -225,20 +214,20 @@ list-style: none;
         align-items: center;
 }
 .contacts .content p {
+display: flex;
 justify-content: center;
 font-size: 20px;
 align-items: center;
-margin-left: 440px;
 margin-bottom: 440px;
 color: #f6f2f2;
 }
 /*Contact Box*/
 .contactForm {
-width: 60%;
-padding: 40px;
+width: 70%;
+padding: 60px;
 background: #dbdbdb;
-margin-left: 280px;
-margin-bottom:40px;
+margin:0 auto;
+margin-bottom: 60px;
 border-radius: 50px;
 }
 .contactForm h2{
@@ -275,6 +264,7 @@ color: aliceblue;
 }
 
 .contacts .container {
+display: flex;
 justify-content: center;
 align-items: center;
 }
@@ -368,13 +358,14 @@ footer {
     bottom: 0;
 }
 .footer-distributed {
-    background-color: #614b78;
+    background-color: #58555b;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
     margin-top: 80px;
+   
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -459,7 +450,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-    color: #e6cd6a7c;
+    color: #0000007c;
     text-decoration: none;
     ;
 }
@@ -506,7 +497,7 @@ footer {
 }
 
 .footer-distributed .footer-icons a:hover {
-    background-color: #3F71EA;
+    background-color: #305171;
 }
 
 .footer-links a:hover {
@@ -514,75 +505,97 @@ footer {
 }
 /*Adapatabilitée au Differents écran*/
 
-@media (max-width: 880px) {
+@media (max-width: 700px) {
     .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
+
     }
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
 }       
 
-@media screen  and (max-width:880px) {
-    .skill {
+@media screen and (max-width: 700px) {
+	nav {
+		justify-content: center;
+	}
+	nav ul {
+		display: none;
+	}
+}
+
+@media screen  and (max-width:700px) {
+    #COMPETENCES {
         justify-content: center;
         align-items: center;
         justify-content: space-around;
     }
+    #COMPETENCES .skill {
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        width: fit-content;
+
+    }
 
 }
-@media screen  and (max-width:880px) {
-    nav {
-        justify-content: center;
-        background-size: cover;
-       
-        margin-left: -25px;
-      
-         }
-    nav ul {
-        display: none;
-    }
-    nav .profile{ margin-top:  5px;
-                  background-size: cover;
-                  justify-content: center;
-                 
-    }
-    nav {margin-top: 2%;
-        margin-right:20px;
-        }
-    
-}
-@media screen  and (max-width:880px) { 
+@media screen  and (max-width:700px) { 
     .contacts .contactForm {
-      margin-left: 140px;
-      margin-top: -100px;
       width: 60%;
+      margin:0 auto;
     
     }
     .contacts .content h2 {
-      text-wrap: nowrap;
-      margin-left: 180px;
+       margin-right:0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 30px;
+
      }
      .contacts .content p{ 
-        margin-left:  110px;
-        ;
+        margin-right:0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 200px;
+       margin-left: 30px;
+
      }
 }
-@media (max-height:800px) {
+@media screen and (max-height:700px) {
     footer {
         position: static;
     }
-    header {
-        padding-top: 40px;
-    }
 }
-@media screen  and (max-width:880px){
+@media screen  and (max-width:700px) {
     #Acceuil .page-content .presentation-image img {
-       margin-left: 120px;
-       justify-content: center;
-       align-items: center;
+       margin: 0 auto;
+      margin-left:80px;
+      margin-bottom: 50px;
+    }
+    #Acceuil .page-content p{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #COMPETENCES .competences .competence ul {
+        margin-right: 100px;
+    }
+    #COMPETENCES .competences .competence ul u h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      text-decoration: underline;
+      margin-bottom: 20px;
+      margin-left: 90px;
     }
 }
